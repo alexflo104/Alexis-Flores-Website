@@ -143,6 +143,10 @@
     margin-left: 275px;
 }
 
+.contact-button a {
+    text-decoration: none;
+}
+
 
 .contact-button button {
     display: flex;          
@@ -155,6 +159,8 @@
     cursor: pointer;      
     border: none;          
     border-radius: 100px;  
+    background-color: grey;
+    color: white;
 }
 
 
@@ -177,23 +183,6 @@
     width: 50px;         
     height: 50px;         
     margin-right: 20px;   
-}
-
-.LinkedIn-button {
-    background-color: grey;
-    color: white;
-}
-.Github-button {
-    background-color: grey;
-    color: white;
-}
-.Email-button {
-    background-color: grey;
-    color: white;
-}
-.Instagram-button {
-    background-color: grey;
-    color: white;
 }
 
 .contact-button button:hover {
