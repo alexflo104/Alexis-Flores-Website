@@ -1,4 +1,4 @@
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 992px) {
     .navigation  {
         padding: 10px;
     }
@@ -37,10 +37,58 @@
     }
     
     img.portrait {
+        align-items: right;
         float: right;
         clear: both;
         max-width: 30pc;
         margin-left: 70pc;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .navigation  {
+        padding: 10px;
+    }
+        .navigation a {
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(255, 255, 255);
+            padding: 15px;
+        }
+    
+    .title {
+        padding-block: 15px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+    }
+    
+    body {
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        background-image: linear-gradient(to right, rgb(39, 39, 39), rgb(51, 50, 50));
+    }
+    
+    .body-text p {
+        float: left;
+        clear: both;
+        padding-top: 40pc;
+        max-width: 50pc;
+        padding-left: 100px;
+    }
+    
+    img {
+        position: absolute;
+        size-adjust: 100px;
+    }
+    
+    img.portrait {
+        align-items: right;
+        float: right;
+        clear: both;
+        max-width: 30pc;
+        margin-left: 15pc;
     }
 }
 
