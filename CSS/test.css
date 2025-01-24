@@ -2,39 +2,38 @@ html {
     scroll-behavior: smooth;
 }
 
-#title {
-    text-align: center;
-    font-size: 40px;
-    margin-top: 25pc;
-    margin-bottom: 27pc;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
+@media screen and (min-width: 1024px) {
+    #title {
+        text-align: center;
+        font-size: 40px;
+        margin-top: 25pc;
+        margin-bottom: 27pc;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .section {
+        text-align: center;
+        font-size: 40px;
+    }
+    #projects {
+        margin-top: 10pc;
+    }
+    
+    #connect {
+        margin-top: 15pc;
+    
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        background-image: linear-gradient(to right, rgb(39, 39, 39), rgb(51, 50, 50));
+    }
+    
+    footer {
+        background-image: black;
+    }
 
-
-.section {
-    text-align: center;
-    font-size: 40px;
-}
-#projects {
-    margin-top: 10pc;
-}
-
-#connect {
-    margin-top: 15pc;
-
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(255, 255, 255);
-    background-image: linear-gradient(to right, rgb(39, 39, 39), rgb(51, 50, 50));
-}
-
-footer {
-    background-image: black;
-}
-
-@media screen and (min-width: 1025px) {
     .navigation  {
         padding: 10px;
     }
@@ -59,6 +58,7 @@ footer {
     }
     
     .portrait{
+        padding-right: 25px;
         padding-left: 15%;
         height: 24pc;
         width: 20pc;
@@ -82,13 +82,17 @@ footer {
         }
     
     .card {
-        
         box-sizing: content-box;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
-        max-width: 550px;
+        max-width: 500px;
         max-height: 1000px;
         margin: auto;
+      }
+
+      .card-image {
+        height: 275px;
+        width: 500px;
       }
       
       .card:hover {
@@ -98,7 +102,7 @@ footer {
       .container {
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
-        padding: 8px 16px;
+        padding: 8px 10px;
         max-height: 600px;
       }
       .container h4 {
@@ -140,6 +144,365 @@ footer {
         justify-content: flex-start; 
         height: 70px;
         width: 700px;         
+        padding: 20px;      
+        margin: 35px 0;     
+        font-size: 30px;     
+        cursor: pointer;      
+        border: none;          
+        border-radius: 100px;  
+        background-color: grey;
+        color: white;
+    }
+    
+    
+    .contact-button button .LinkedIn-image {
+        width: 70px;       
+        height: 70px;
+        margin-right: 20px;     
+        
+    }
+    .contact-button button .Github-image {
+        width: 50px;          
+        height: 50px;           
+        margin-right: 20px;     
+    }
+    .contact-button button .Gmail-image {
+        width: 50px;            
+        height: 40px;           
+        margin-right: 20px;     
+    }
+    .contact-button button .Instagram-image {
+        width: 50px;         
+        height: 50px;         
+        margin-right: 20px;   
+    }
+    
+    .contact-button button:hover {
+        opacity: 0.9;     
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+    .navigation  {
+        padding: 10px;
+    }
+        .navigation a {
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(255, 255, 255);
+            padding: 15px;
+        }
+
+    #title {
+        text-align: center;
+        font-size: 40px;
+        margin-top: 25pc;
+        margin-bottom: 27pc;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .section {
+        text-align: center;
+        font-size: 40px;
+    }
+    #projects {
+        margin-top: 10pc;
+    }
+    
+    #connect {
+        margin-top: 15pc;
+    
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        background-image: linear-gradient(to right, rgb(39, 39, 39), rgb(51, 50, 50));
+    }
+    
+    footer {
+        background-image: black;
+    }
+
+
+    .about-me {
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    
+    .box {
+        padding-left: 20px;
+        width: 50pc;
+        height: 25pc;
+        word-wrap: break-word;
+    }
+    
+    .portrait{
+        padding-right: 40px;
+        padding-left: 15%;
+        height: 24pc;
+        width: 20pc;
+        display: inline-block;
+    }
+
+    .row{
+        display: flex;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5pc;
+      }
+        .cards .title {
+            padding-block: 15px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+    
+    .card {
+        box-sizing: content-box;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        max-width: 350px;
+        max-height: 500px;
+        margin: auto;
+      }
+      .card-image {
+        height: 200px;
+        width: 350px;
+      }
+      
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+      
+      .container {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 8px 10px;
+        max-height: 600px;
+      }
+      .container h4 {
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+      }
+    
+    .card-space { 
+        margin-top: 5px; 
+    }
+    
+    .card-link {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+
+    .contact-button {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        width: 100%;           
+    }
+    
+    .contact-button div {
+        width: 325px;
+        text-align: center;
+    }
+    
+    .contact-button a {
+        text-decoration: none;
+    }
+    
+    
+    .contact-button button {
+        display: flex;          
+        align-items: center;  
+        justify-content: flex-start; 
+        height: 70px;
+        width: 500px;         
+        padding: 20px;      
+        margin: 35px 0;     
+        font-size: 30px;     
+        cursor: pointer;      
+        border: none;          
+        border-radius: 100px;  
+        background-color: grey;
+        color: white;
+    }
+    
+    
+    .contact-button button .LinkedIn-image {
+        width: 70px;       
+        height: 70px;
+        margin-right: 20px;     
+        
+    }
+    .contact-button button .Github-image {
+        width: 50px;          
+        height: 50px;           
+        margin-right: 20px;     
+    }
+    .contact-button button .Gmail-image {
+        width: 50px;            
+        height: 40px;           
+        margin-right: 20px;     
+    }
+    .contact-button button .Instagram-image {
+        width: 50px;         
+        height: 50px;         
+        margin-right: 20px;   
+    }
+    
+    .contact-button button:hover {
+        opacity: 0.9;     
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navigation  {
+        padding: 10px;
+    }
+        .navigation a {
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(255, 255, 255);
+            padding: 15px;
+        }
+
+    #title {
+        text-align: center;
+        font-size: 40px;
+        margin-top: 12pc;
+        margin-bottom: 27pc;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .section {
+        text-align: center;
+        font-size: 40px;
+    }
+    #projects {
+        margin-top: 10pc;
+    }
+    
+    #connect {
+        margin-top: 15pc;
+    
+    }
+    
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        background-image: linear-gradient(to right, rgb(39, 39, 39), rgb(51, 50, 50));
+    }
+    
+    footer {
+        text-align: center;
+        background-image: black;
+    }
+
+
+    .about-me {
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+    }
+    
+    .box {
+        padding-left: 20px;
+        width: 250px;
+        height: 25pc;
+        word-wrap: break-word;
+    }
+    
+    .portrait{
+        padding-top: 10pc;
+        padding-right: 40px;
+        padding-left: 15%;
+        height: 18pc;
+        width: 15pc;
+        display: inline-block;
+    }
+
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5pc;
+      }
+        .cards .title {
+            padding-block: 15px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+    
+    .card {
+        box-sizing: content-box;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        max-width: 300px;
+        max-height: 500px;
+        margin: auto;
+      }
+      .card-image {
+        height: 150px;
+        width: 300px;
+      }
+      
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+      }
+      
+      .container {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 8px 10px;
+        max-height: 600px;
+      }
+      .container h4 {
+        font-size: 17px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+      }
+    
+    .card-space { 
+        margin-top: 10px; 
+    }
+    
+    .card-link {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+
+    .contact-button {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;    
+        width: 100%;           
+    }
+    
+    .contact-button div {
+        width: 325px;
+        text-align: center;
+    }
+    
+    .contact-button a {
+        text-decoration: none;
+    }
+    
+    
+    .contact-button button {
+        display: flex;          
+        align-items: center;  
+        justify-content: flex-start; 
+        height: 70px;
+        width: 250px;         
         padding: 20px;      
         margin: 35px 0;     
         font-size: 30px;     
