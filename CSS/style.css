@@ -379,7 +379,12 @@ html {
         margin-top: 12pc;
         margin-bottom: 27pc;
         font-family: Georgia, 'Times New Roman', Times, serif;
+        overflow: scroll;
     }
+
+        #title h3{
+            animation: 2s 
+        }
     
     .section {
         text-align: center;
@@ -413,6 +418,7 @@ html {
     }
     
     .box {
+        margin: auto;
         padding-left: 20px;
         width: 250px;
         height: 25pc;
