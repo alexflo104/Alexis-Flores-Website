@@ -3,14 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alexis Flores Portfolio</title>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
-<div class = "navigation">
-    <a class = "active">Home</a>
-    <a href="Projects.html">Projects</a>
-    <a href="Contact.html">Contact</a>
-</div>
 <div class = "body-text">
     <body>
         <h2 class="title">Alexis Flores Portfolio</h2>
