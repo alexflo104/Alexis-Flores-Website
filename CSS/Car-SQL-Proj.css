@@ -9,6 +9,15 @@ html {
     margin-bottom: 5pc;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+#data {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 10pc;
+    margin-bottom: 5pc;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 p {
     text-align: left;
     margin-top: 20px;
@@ -34,3 +43,7 @@ body {
         color: rgb(255, 255, 255);
         padding: 15px;
     }
+
+.SQL-Question {
+    margin-top: 5pc;
+}
