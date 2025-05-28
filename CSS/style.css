@@ -66,6 +66,7 @@ html {
     }
 
     .row{
+        margin-top: 5pc;
         display: flex;
     }
 
@@ -247,6 +248,7 @@ html {
     }
 
     .row{
+        margin-top: 5pc;
         display: flex;
     }
 
