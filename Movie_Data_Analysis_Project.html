@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alexis Flores Portfolio</title>
     <link rel="stylesheet" href="CSS/Car-SQL-Proj.css">
+    <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-sql.min.js"></script>
 </head>
 
 <body>
@@ -31,7 +34,7 @@
             This comprehensive dataset provides an excellent foundation for exploring trends in film profitability, audience reception, and production patterns during this iconic era in cinema history. 
             The rich variety of features allows for detailed analysis using SQL, making it ideal for developing more advanced querying techniques and insights. 
             The data was retrieved from Kaggle and includes the following variables:
-        <img class="image" src = "images/Movie_Project/movie data.JPG" alt="Alexis Flores Grad Picture">
+        <img class="image" src = "images/Movie_Project/movie data.JPG" alt="Movie Data Project">
         <p>You can access the data page from Kaggle using the following link - <a class="link" href="https://www.kaggle.com/datasets/danielgrijalvas/movies/data">Movie Data</a></p>
     </div>
 
@@ -49,7 +52,7 @@
             </ul>
             <p>Query:</p>
             <pre>
-                <code>
+                <code class="language-sql">
                     SELECT year, name, company, Score, votes
                     FROM movie_project.data
                     WHERE votes > 300000
@@ -381,6 +384,13 @@
                 I hope to make more projects like this and find more interesting answers to from questions created by data. </br></br>
 
                 Thank you.</p>
+        </div>
+    </div>
+
+    <div>
+        <div class="sub-title" id="dashboard">
+            <a>Dashboard</a>
+            <p><iframe title="Movie-Analysis-Dashboard" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiYjJlNzEzYTQtYTdhYS00YTViLWJhZjMtODU5MDBjMTliYTJhIiwidCI6ImM4NmI1ZDE1LTVhNzItNDE4OS1hZGMwLTk4NzI4NTFmZjZkMiIsImMiOjJ9" frameborder="0" allowFullScreen="true"></iframe></p>
         </div>
     </div>
 

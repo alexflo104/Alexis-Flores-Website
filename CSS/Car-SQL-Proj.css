@@ -86,3 +86,18 @@ iframe {
 code {
     font-size: 17px;
 }
+
+
+pre .language-sql {
+    color: white;
+}
+
+
+pre[class*="language-"], code[class*="language-"] {
+    color: rgb(255, 255, 255);
+    background: transparent !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+    color: rgb(255, 255, 255);
+
+}

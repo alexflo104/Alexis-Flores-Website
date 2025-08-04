@@ -29,10 +29,6 @@ html {
         color: rgb(255, 255, 255);
         background-image: linear-gradient(to right, rgb(39, 39, 39), rgb(51, 50, 50));
     }
-    
-    footer {
-        background-image: black;
-    }
 
     .navigation  {
         padding: 10px;
@@ -181,6 +177,37 @@ html {
     .contact-button button:hover {
         opacity: 0.9;     
     }
+
+    footer object{
+        display: flex;
+        margin: 50px auto 0 auto; /* centers horizontally */
+        width: 100%;
+        height: 10px;
+        background-color: rgb(22, 21, 21);
+    }
+
+    footer .row {
+        display: flex;
+        justify-content: center;
+        gap: 100px; /* space between the boxes */
+        margin: 0 auto;
+    }
+    
+    footer .box {
+        width: 200px;
+        margin-left: 10px;
+        word-wrap: break-word;
+        font-size: 40px;
+        flex-direction: row;
+    }
+
+    .box a {
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+
+    }
+
+    
 }
 
 @media screen and (min-width: 480px) and (max-width: 1024px) {
@@ -361,6 +388,36 @@ html {
     
     .contact-button button:hover {
         opacity: 0.9;     
+    }
+
+    footer {
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    footer object{
+        display: flex;
+        margin: 50px auto 0 auto; /* centers horizontally */
+        width: 100%;
+        height: 10px;
+        background-color: rgb(22, 21, 21);
+    }
+    
+    footer .row {
+        display: flex;
+        justify-content: center;
+        gap: 50px; /* space between the boxes */
+        flex-wrap: wrap;
+    }
+    footer .box {
+        text-align: left; /* or center if you prefer */
+        min-width: 200px;
+    }
+
+    .box a {
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+
     }
 }
 
