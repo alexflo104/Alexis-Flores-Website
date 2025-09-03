@@ -50,10 +50,15 @@ html {
     .about-me {
         text-align: left;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 25px;
+        font-size: 23px;
     }
-    
-    .box {
+
+    .about-row{
+        margin-top: 5pc;
+        display: flex;
+    }
+
+    .about-box {
         padding-left: 15%;
         width: 42pc;
         height: 25pc;
@@ -68,10 +73,15 @@ html {
         display: inline-block;
     }
 
-    .row{
+    .section h3 {
+        padding-top: 60px;
+    }
+
+    .project-row{
         margin-top: 5pc;
         display: flex;
     }
+    
 
     .cards {
         display: flex;
@@ -197,28 +207,39 @@ html {
         background-color: rgb(22, 21, 21);
     }
 
-    footer .row {
+    .footer-row{
+        margin-top: 5pc;
         display: flex;
-        justify-content: center;
-        gap: 100px; /* space between the boxes */
+    }
+    
+    .footer-box {
+        flex-direction: column;  /* stack Pages and links vertically */
+        justify-content: center; /* vertical center */
+        align-items: center;
+        text-align: center;
+        width: 20pc;
+        height: 20pc;
+        word-wrap: break-word;
         margin: 0 auto;
     }
     
-    footer .box {
-        width: 150px;
-        margin-left: 10px;
-        word-wrap: break-word;
-        font-size: 40px;
-        flex-direction: row;
-    }
-
-    .box a {
-        font-size: 20px;
+    .footer-box-title {
+        font-size: 30px;
         color: black;
-
+        font-weight: bold;
+        margin-bottom: 10px;
+        display: block;
     }
 
-    
+    .footer-box a {
+        color: black;
+        display: block;
+        padding: 2px;
+    }
+
+    .copyright {
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 1039px) and (min-width: 480px) {
@@ -265,19 +286,28 @@ html {
         background-color: #687891;
     }
 
+    .about-box {
+        padding-left: 15%;
+        width: 42pc;
+        height: 25pc;
+        width: 50%;
+        min-width: 250px;        /* keeps a minimum size */
+        max-width: 400px;
+    }
 
     .about-me {
+        display: block;
         text-align: left;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
+        font-size: 2vw;
     }
+
+    .about-row{
+        margin-top: 5pc;
+        display: flex;
+    }
+
     
-    .box {
-        padding-left: 20px;
-        width: 50pc;
-        height: 25pc;
-        word-wrap: break-word;
-    }
     
     .portrait{
         padding-right: 40px;
@@ -287,7 +317,11 @@ html {
         display: inline-block;
     }
 
-    .row{
+    .section h3 {
+        padding-top: 60px;
+    }
+
+    .project-row{
         margin-top: 5pc;
         display: flex;
     }
@@ -411,25 +445,38 @@ html {
         background-color: rgb(22, 21, 21);
     }
 
-    footer .row {
+    .footer-row{
+        margin-top: 5pc;
         display: flex;
-        justify-content: center;
-        gap: 100px; /* space between the boxes */
+    }
+    
+    .footer-box {
+        flex-direction: column;  /* stack Pages and links vertically */
+        justify-content: center; /* vertical center */
+        align-items: center;
+        text-align: center;
+        width: 20pc;
+        height: 20pc;
+        word-wrap: break-word;
         margin: 0 auto;
     }
     
-    footer .box {
-        width: 150px;
-        margin-left: 10px;
-        word-wrap: break-word;
+    .footer-box-title {
         font-size: 30px;
-        flex-direction: row;
+        color: black;
+        font-weight: bold;
+        margin-bottom: 10px;
+        display: block;
     }
 
-    .box a {
-        font-size: 17px;
+    .footer-box a {
         color: black;
+        display: block;
+        padding: 2px;
+    }
 
+    .copyright {
+        text-align: center;
     }
 }
 
