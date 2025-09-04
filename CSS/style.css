@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1040px) {
     #title {
         text-align: center;
         font-size: 40px;
@@ -26,50 +26,71 @@ html {
     
     body {
         font-family: Arial, Helvetica, sans-serif;
-        color: rgb(255, 255, 255);
-        background-image: linear-gradient(to right, rgb(39, 39, 39), rgb(51, 50, 50));
+        color: black;
+        background-color: #687891;
     }
 
     .navigation  {
         padding: 10px;
     }
-        .navigation a {
+        .navigation h3 {
             font-size: 25px;
             font-family: Arial, Helvetica, sans-serif;
-            color: rgb(255, 255, 255);
-            padding: 15px;
+            color: black;
+            padding-bottom: 75px;
+        }
+        
+        .navigation a {
+            color: black;
+            padding-left: 30px;
         }
 
-    .about-me {
-        text-align: left;
-        font-family: Georgia, 'Times New Roman', Times, serif;
-        font-size: 20px;
-    }
     
-    .box {
-        padding-left: 15%;
-        width: 42pc;
-        height: 25pc;
-        word-wrap: break-word;
-    }
-    
-    .portrait{
-        padding-right: 25px;
-        padding-left: 15%;
-        height: 24pc;
-        width: 20pc;
-        display: inline-block;
+
+    .about-box {
+        margin-left: 10%;
+        width: 40%;     
+        min-width: 25px;   
+        height: auto;         
+        box-sizing: border-box; 
     }
 
-    .row{
+    .about-me {
+        text-align: left;      
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: clamp(14px, 2vw, 22px); 
+        line-height: 1.5;       
+    }
+    
+
+    .about-row{
         margin-top: 5pc;
         display: flex;
     }
+    
+    .portrait{
+        padding-right: 10px;
+        padding-left: 10%;
+        height: 40vh;
+        width: 30vh;
+        display: inline-block;
+    }
+
+    .section h3 {
+        padding-top: 60px;
+    }
+
+    .project-row{
+        margin-top: 5pc;
+        display: flex;
+    }
+    
 
     .cards {
         display: flex;
         flex-direction: row;
         margin-top: 5pc;
+
       }
         .cards .title {
             padding-block: 15px;
@@ -88,7 +109,7 @@ html {
       }
 
       .card-image {
-        height: 275px;
+        height: 280px;
         width: 500px;
       }
       
@@ -101,11 +122,13 @@ html {
         font-family: Arial, Helvetica, sans-serif;
         padding: 8px 10px;
         max-height: 600px;
+        background-color: #9cacc7;
+
       }
       .container h4 {
         font-size: 28px;
         font-family: Arial, Helvetica, sans-serif;
-        color: rgb(255, 255, 255);
+        color: black;
       }
     
     .card-space { 
@@ -114,7 +137,7 @@ html {
     
     .card-link {
         font-family: Arial, Helvetica, sans-serif;
-        color: rgb(255, 255, 255);
+        color: black;
         text-decoration: none;
     }
 
@@ -145,10 +168,11 @@ html {
         margin: 35px 0;     
         font-size: 30px;     
         cursor: pointer;      
-        border: none;          
+        border: 1px solid black;          
         border-radius: 100px;  
-        background-color: grey;
-        color: white;
+        background-color: #9cacc7;
+        color: black;
+
     }
     
     
@@ -180,46 +204,63 @@ html {
 
     footer object{
         display: flex;
-        margin: 50px auto 0 auto; /* centers horizontally */
+        margin: 50px auto 0 auto; 
         width: 100%;
         height: 10px;
         background-color: rgb(22, 21, 21);
     }
 
-    footer .row {
+    .footer-row{
+        margin-top: 5pc;
         display: flex;
-        justify-content: center;
-        gap: 100px; /* space between the boxes */
+    }
+    
+    .footer-box {
+        flex-direction: column;  
+        justify-content: center; 
+        align-items: center;
+        text-align: center;
+        width: 20pc;
+        height: 20pc;
+        word-wrap: break-word;
         margin: 0 auto;
     }
     
-    footer .box {
-        width: 200px;
-        margin-left: 10px;
-        word-wrap: break-word;
-        font-size: 40px;
-        flex-direction: row;
+    .footer-box-title {
+        font-size: 30px;
+        color: black;
+        font-weight: bold;
+        margin-bottom: 10px;
+        display: block;
     }
 
-    .box a {
-        font-size: 20px;
-        color: rgb(255, 255, 255);
-
+    .footer-box a {
+        color: black;
+        display: block;
+        padding: 2px;
     }
 
-    
+    .copyright {
+        text-align: center;
+    }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1024px) {
+@media screen and (max-width: 1039px) and (min-width: 480px) {
     .navigation  {
         padding: 10px;
     }
-        .navigation a {
+        .navigation h3 {
             font-size: 25px;
             font-family: Arial, Helvetica, sans-serif;
-            color: rgb(255, 255, 255);
-            padding: 15px;
+            color: black;
+            padding-bottom: 40px;
         }
+        
+        .navigation a {
+            color: black;
+            padding-left: 30px;
+        }
+
 
     #title {
         text-align: center;
@@ -234,7 +275,7 @@ html {
         font-size: 40px;
     }
     #projects {
-        margin-top: 10pc;
+        margin-top: 4pc;
     }
     
     #connect {
@@ -244,37 +285,47 @@ html {
     
     body {
         font-family: Arial, Helvetica, sans-serif;
-        color: rgb(255, 255, 255);
-        background-image: linear-gradient(to right, rgb(39, 39, 39), rgb(51, 50, 50));
-    }
-    
-    footer {
-        background-image: black;
+        color: black;
+        background-color: #687891;
     }
 
+    .about-box {
+        margin: 0 auto;     
+        width: 50%;        
+        min-width: 250px;   
+        max-width: 600px;     
+        height: auto;     
+        box-sizing: border-box;  
+    }
 
     .about-me {
-        text-align: left;
+        text-align: left;     
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
+        font-size: clamp(16px, 2vw, 22px); 
+        line-height: 1.5;      
     }
+
+
+    .about-row{
+        margin-top: pc;
+        display: flex;
+    }
+
     
-    .box {
-        padding-left: 20px;
-        width: 50pc;
-        height: 25pc;
-        word-wrap: break-word;
-    }
     
     .portrait{
-        padding-right: 40px;
-        padding-left: 15%;
-        height: 24pc;
-        width: 20pc;
+        padding-right: 35px;
+        padding-left: 5%;
+        height: 40vh;
+        width: 30vh;
         display: inline-block;
     }
 
-    .row{
+    .section h3 {
+        padding-top: 60px;
+    }
+
+    .project-row{
         margin-top: 5pc;
         display: flex;
     }
@@ -285,7 +336,7 @@ html {
         margin-top: 5pc;
       }
         .cards .title {
-            padding-block: 15px;
+            padding-block: 10px;
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
@@ -295,13 +346,15 @@ html {
         box-sizing: content-box;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
-        max-width: 350px;
-        max-height: 500px;
+        width: 40%;
+        min-width: 200px;
+        height: auto;
         margin: auto;
       }
+
       .card-image {
-        height: 200px;
-        width: 350px;
+        height: auto;
+        max-width: 100%;
       }
       
       .card:hover {
@@ -312,12 +365,14 @@ html {
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
         padding: 8px 10px;
-        max-height: 600px;
+        max-height: auto;
+        background-color: #9cacc7;
       }
+
       .container h4 {
         font-size: 17px;
         font-family: Arial, Helvetica, sans-serif;
-        color: rgb(255, 255, 255);
+        color: black;
       }
     
     .card-space { 
@@ -326,7 +381,7 @@ html {
     
     .card-link {
         font-family: Arial, Helvetica, sans-serif;
-        color: rgb(255, 255, 255);
+        color: black;
         text-decoration: none;
     }
 
@@ -357,10 +412,10 @@ html {
         margin: 35px 0;     
         font-size: 30px;     
         cursor: pointer;      
-        border: none;          
+        border: 1px solid black;          
         border-radius: 100px;  
-        background-color: grey;
-        color: white;
+        background-color: #9cacc7;
+        color: black;
     }
     
     
@@ -390,11 +445,6 @@ html {
         opacity: 0.9;     
     }
 
-    footer {
-        padding: 20px 0;
-        text-align: center;
-    }
-
     footer object{
         display: flex;
         margin: 50px auto 0 auto; /* centers horizontally */
@@ -402,34 +452,59 @@ html {
         height: 10px;
         background-color: rgb(22, 21, 21);
     }
-    
-    footer .row {
+
+    .footer-row{
+        margin-top: 5pc;
         display: flex;
-        justify-content: center;
-        gap: 50px; /* space between the boxes */
-        flex-wrap: wrap;
     }
-    footer .box {
-        text-align: left; /* or center if you prefer */
-        min-width: 200px;
+    
+    .footer-box {
+        flex-direction: column;  /* stack Pages and links vertically */
+        justify-content: center; /* vertical center */
+        align-items: center;
+        text-align: center;
+        width: 20pc;
+        height: 20pc;
+        word-wrap: break-word;
+        margin: 0 auto;
+    }
+    
+    .footer-box-title {
+        font-size: 30px;
+        color: black;
+        font-weight: bold;
+        margin-bottom: 10px;
+        display: block;
     }
 
-    .box a {
-        font-size: 20px;
-        color: rgb(255, 255, 255);
+    .footer-box a {
+        color: black;
+        display: block;
+        padding: 2px;
+    }
 
+    .copyright {
+        text-align: center;
     }
 }
 
 @media screen and (max-width: 480px) {
     .navigation  {
-        padding: 10px;
+        display: block;
+        margin: auto;
+        padding: 5px;
     }
-        .navigation a {
-            font-size: 25px;
+        .navigation h3 {
+            font-size: 14px;
             font-family: Arial, Helvetica, sans-serif;
-            color: rgb(255, 255, 255);
-            padding: 15px;
+            color: black;
+            padding-bottom: 10px;
+        }
+        
+        .navigation a {
+            font-size: 12px;
+            color: black;
+            padding-left: 20px;
         }
 
     #title {
@@ -450,47 +525,41 @@ html {
         font-size: 40px;
     }
     #projects {
-        margin-top: 10pc;
+        margin-top: 5pc;
+        font-size: 25px;
+
     }
     
     #connect {
-        margin-top: 15pc;
+        margin-top: 5pc;
+        font-size: 25px;
     
     }
     
     body {
         font-family: Arial, Helvetica, sans-serif;
-        color: rgb(255, 255, 255);
-        background-image: linear-gradient(to right, rgb(39, 39, 39), rgb(51, 50, 50));
+        color: black;
+        background-color: #687891;
     }
     
-    footer {
-        text-align: center;
-        background-image: black;
-    }
-
-
+    
     .about-me {
         text-align: left;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 15px;
     }
     
     .box {
-        margin: auto;
         padding-left: 20px;
-        width: 250px;
-        height: 25pc;
+        width: 200px;
+        height: auto;
         word-wrap: break-word;
     }
     
     .portrait{
-        padding-top: 10pc;
-        padding-right: 40px;
-        padding-left: 15%;
-        height: 18pc;
-        width: 15pc;
-        display: inline-block;
+        display: block;
+        margin: auto;
+        height: 16pc;
+        width: 13pc;
     }
 
 
@@ -500,7 +569,7 @@ html {
         margin-top: 5pc;
       }
         .cards .title {
-            padding-block: 15px;
+            padding-block: 10px;
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
@@ -510,13 +579,14 @@ html {
         box-sizing: content-box;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
-        max-width: 300px;
-        max-height: 500px;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
         margin: auto;
       }
       .card-image {
-        height: 150px;
-        width: 300px;
+        height: auto;
+        max-width: 100%;
       }
       
       .card:hover {
@@ -528,11 +598,12 @@ html {
         font-family: Arial, Helvetica, sans-serif;
         padding: 8px 10px;
         max-height: 600px;
+        background-color: #9cacc7;
       }
       .container h4 {
         font-size: 17px;
         font-family: Arial, Helvetica, sans-serif;
-        color: rgb(255, 255, 255);
+        color: black;
       }
     
     .card-space { 
@@ -541,7 +612,7 @@ html {
     
     .card-link {
         font-family: Arial, Helvetica, sans-serif;
-        color: rgb(255, 255, 255);
+        color: black;
         text-decoration: none;
     }
 
@@ -553,7 +624,7 @@ html {
     }
     
     .contact-button div {
-        width: 325px;
+        width: 320px;
         text-align: center;
     }
     
@@ -566,11 +637,11 @@ html {
         display: flex;          
         align-items: center;  
         justify-content: flex-start; 
-        height: 70px;
-        width: 250px;         
+        height: 45px;
+        width: 225px;         
         padding: 20px;      
         margin: 35px 0;     
-        font-size: 30px;     
+        font-size: 25px;     
         cursor: pointer;      
         border: none;          
         border-radius: 100px;  
@@ -580,28 +651,72 @@ html {
     
     
     .contact-button button .LinkedIn-image {
-        width: 70px;       
-        height: 70px;
+        width: 50px;       
+        height: 50px;
         margin-right: 20px;     
         
     }
     .contact-button button .Github-image {
-        width: 50px;          
-        height: 50px;           
+        width: 30px;          
+        height: 30px;           
         margin-right: 20px;     
     }
     .contact-button button .Gmail-image {
-        width: 50px;            
-        height: 40px;           
+        width: 30px;            
+        height: 20px;           
         margin-right: 20px;     
     }
     .contact-button button .Instagram-image {
-        width: 50px;         
-        height: 50px;         
+        width: 30px;         
+        height: 30px;         
         margin-right: 20px;   
     }
     
     .contact-button button:hover {
         opacity: 0.9;     
+    }
+
+    footer object{
+        display: flex;
+        margin: 50px auto 0 auto; 
+        width: 100%;
+        height: 10px;
+        background-color: rgb(22, 21, 21);
+    }
+
+    .footer-row{
+        margin-top: 5pc;
+        display: flex;
+    }
+    
+    .footer-box {
+        flex-direction: column; 
+        justify-content: center; 
+        align-items: center;
+        text-align: center;
+        width: 20pc;
+        height: 20pc;
+        word-wrap: break-word;
+        margin: 0 auto;
+    }
+    
+    .footer-box-title {
+        font-size: 20px;
+        color: black;
+        font-weight: bold;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .footer-box a {
+        color: black;
+        display: block;
+        padding: 2px;
+        font-size: 15px;
+    }
+
+    .copyright {
+        font-size: 10px;
+        text-align: center;
     }
 }
