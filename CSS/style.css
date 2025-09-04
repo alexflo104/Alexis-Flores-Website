@@ -48,11 +48,9 @@ html {
     
 
     .about-box {
-        margin: 0 auto;          /* center the whole box */
-        padding: 20px;           /* even padding inside */
-        width: 50%;              /* responsive width */
-        min-width: 250px;        /* don’t shrink too small */
-        max-width: 600px;        /* allow more room on large screens */
+        margin-left: 10%;
+        width: 40%;              /* responsive width */
+        min-width: 25px;        /* don’t shrink too small */
         height: auto;            /* let height grow with text */
         box-sizing: border-box;  /* keeps padding inside the width */
     }
@@ -60,7 +58,7 @@ html {
     .about-me {
         text-align: left;        /* keep text aligned left */
         font-family: Arial, Helvetica, sans-serif;
-        font-size: clamp(14px, 2vw, 20px); /* responsive font size */
+        font-size: clamp(14px, 2vw, 22px); /* responsive font size */
         line-height: 1.5;        /* better readability */
     }
     
@@ -277,7 +275,7 @@ html {
         font-size: 40px;
     }
     #projects {
-        margin-top: 10pc;
+        margin-top: 4pc;
     }
     
     #connect {
@@ -293,7 +291,6 @@ html {
 
     .about-box {
         margin: 0 auto;          /* center the whole box */
-        padding: 20px;           /* even padding inside */
         width: 50%;              /* responsive width */
         min-width: 250px;        /* don’t shrink too small */
         max-width: 600px;        /* allow more room on large screens */
@@ -304,23 +301,23 @@ html {
     .about-me {
         text-align: left;        /* keep text aligned left */
         font-family: Arial, Helvetica, sans-serif;
-        font-size: clamp(14px, 2vw, 20px); /* responsive font size */
+        font-size: clamp(16px, 2vw, 22px); /* responsive font size */
         line-height: 1.5;        /* better readability */
     }
 
 
     .about-row{
-        margin-top: 5pc;
+        margin-top: pc;
         display: flex;
     }
 
     
     
     .portrait{
-        padding-right: 40px;
-        padding-left: 15%;
-        height: 24pc;
-        width: 20pc;
+        padding-right: 35px;
+        padding-left: 5%;
+        height: 40vh;
+        width: 30vh;
         display: inline-block;
     }
 
@@ -339,7 +336,7 @@ html {
         margin-top: 5pc;
       }
         .cards .title {
-            padding-block: 15px;
+            padding-block: 10px;
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
@@ -349,13 +346,15 @@ html {
         box-sizing: content-box;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
-        max-width: 350px;
-        max-height: 500px;
+        width: 40%;
+        min-width: 200px;
+        height: auto;
         margin: auto;
       }
+
       .card-image {
-        height: 200px;
-        width: 350px;
+        height: auto;
+        max-width: 100%;
       }
       
       .card:hover {
@@ -366,8 +365,9 @@ html {
         text-align: center;
         font-family: Arial, Helvetica, sans-serif;
         padding: 8px 10px;
-        max-height: 600px;
+        max-height: auto;
       }
+
       .container h4 {
         font-size: 17px;
         font-family: Arial, Helvetica, sans-serif;
@@ -489,18 +489,21 @@ html {
 
 @media screen and (max-width: 480px) {
     .navigation  {
-        padding: 10px;
+        display: block;
+        margin: auto;
+        padding: 5px;
     }
         .navigation h3 {
-            font-size: 20px;
+            font-size: 14px;
             font-family: Arial, Helvetica, sans-serif;
             color: black;
-            padding-bottom: 40px;
+            padding-bottom: 10px;
         }
         
         .navigation a {
+            font-size: 12px;
             color: black;
-            padding-left: 30px;
+            padding-left: 20px;
         }
 
     #title {
@@ -521,42 +524,41 @@ html {
         font-size: 40px;
     }
     #projects {
-        margin-top: 10pc;
+        margin-top: 5pc;
+        font-size: 25px;
+
     }
     
     #connect {
-        margin-top: 15pc;
+        margin-top: 5pc;
+        font-size: 25px;
     
     }
     
     body {
         font-family: Arial, Helvetica, sans-serif;
         color: black;
-        background-color: white;
+        background-color: #687891;
     }
     
     
-
-
     .about-me {
         text-align: left;
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 5px;
     }
     
     .box {
         padding-left: 20px;
-        width: 480px;
-        height: 5pc;
+        width: 200px;
+        height: auto;
         word-wrap: break-word;
     }
     
     .portrait{
-        padding-top: 10pc;
-        padding-right: 0px;
-        padding-left: 0%;
-        height: 18pc;
-        width: 15pc;
+        display: block;
+        margin: auto;
+        height: 16pc;
+        width: 13pc;
     }
 
 
@@ -566,7 +568,7 @@ html {
         margin-top: 5pc;
       }
         .cards .title {
-            padding-block: 15px;
+            padding-block: 10px;
             text-align: center;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
@@ -576,13 +578,14 @@ html {
         box-sizing: content-box;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
-        max-width: 300px;
-        max-height: 500px;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
         margin: auto;
       }
       .card-image {
-        height: 150px;
-        width: 300px;
+        height: auto;
+        max-width: 100%;
       }
       
       .card:hover {
@@ -598,7 +601,7 @@ html {
       .container h4 {
         font-size: 17px;
         font-family: Arial, Helvetica, sans-serif;
-        color: white;
+        color: black;
       }
     
     .card-space { 
@@ -607,7 +610,7 @@ html {
     
     .card-link {
         font-family: Arial, Helvetica, sans-serif;
-        color: white;
+        color: black;
         text-decoration: none;
     }
 
@@ -619,7 +622,7 @@ html {
     }
     
     .contact-button div {
-        width: 325px;
+        width: 320px;
         text-align: center;
     }
     
@@ -632,11 +635,11 @@ html {
         display: flex;          
         align-items: center;  
         justify-content: flex-start; 
-        height: 70px;
-        width: 250px;         
+        height: 45px;
+        width: 225px;         
         padding: 20px;      
         margin: 35px 0;     
-        font-size: 30px;     
+        font-size: 25px;     
         cursor: pointer;      
         border: none;          
         border-radius: 100px;  
@@ -646,28 +649,72 @@ html {
     
     
     .contact-button button .LinkedIn-image {
-        width: 70px;       
-        height: 70px;
+        width: 50px;       
+        height: 50px;
         margin-right: 20px;     
         
     }
     .contact-button button .Github-image {
-        width: 50px;          
-        height: 50px;           
+        width: 30px;          
+        height: 30px;           
         margin-right: 20px;     
     }
     .contact-button button .Gmail-image {
-        width: 50px;            
-        height: 40px;           
+        width: 30px;            
+        height: 20px;           
         margin-right: 20px;     
     }
     .contact-button button .Instagram-image {
-        width: 50px;         
-        height: 50px;         
+        width: 30px;         
+        height: 30px;         
         margin-right: 20px;   
     }
     
     .contact-button button:hover {
         opacity: 0.9;     
+    }
+
+    footer object{
+        display: flex;
+        margin: 50px auto 0 auto; /* centers horizontally */
+        width: 100%;
+        height: 10px;
+        background-color: rgb(22, 21, 21);
+    }
+
+    .footer-row{
+        margin-top: 5pc;
+        display: flex;
+    }
+    
+    .footer-box {
+        flex-direction: column;  /* stack Pages and links vertically */
+        justify-content: center; /* vertical center */
+        align-items: center;
+        text-align: center;
+        width: 20pc;
+        height: 20pc;
+        word-wrap: break-word;
+        margin: 0 auto;
+    }
+    
+    .footer-box-title {
+        font-size: 20px;
+        color: black;
+        font-weight: bold;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .footer-box a {
+        color: black;
+        display: block;
+        padding: 2px;
+        font-size: 15px;
+    }
+
+    .copyright {
+        font-size: 10px;
+        text-align: center;
     }
 }
